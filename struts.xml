@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name = "Lab2" namespace = "/" extends = "struts-default">
+		<default-action-ref name = "index" />
+		<action name="delete" class="Lab2.Action" method="Delete">
+			<result name="success">/delete.jsp</result>
+		</action>
+		<action name="search" class="Lab2.Action" method="List">
+			<result name="success">/index.jsp</result>
+		</action>
+		<action name="detial" class="Lab2.Action" method="Detail">
+			<result name="input">/detial.jsp</result>
+		</action>
+	</package>
+</struts>    
